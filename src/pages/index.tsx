@@ -77,7 +77,7 @@ export default function Home() {
                   errors?.lastName?.type === "pattern" && <p className="text-red-600" >Alphabetical characters only</p>
                  }
                  {
-                  errors?.lastName?.type === "maxLength" && <p className="text-red-600 " >Name cannot exceed 20 characters</p>   
+                  errors?.lastName?.type === "maxLength" && <p className="text-red-600 " >LastName cannot exceed 20 characters</p>   
                  }
                  <GrContactInfo className='text-xl absolute top-1/2 right-2 -translate-x-1 -translate-y-1/2 '/>
                </div>
