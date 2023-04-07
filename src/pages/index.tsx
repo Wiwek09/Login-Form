@@ -54,7 +54,7 @@ export default function Home() {
           <form onSubmit={onSubmit} className='' method="post"  >
             <div className='flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-6 w-full' >
                <div className='relative h-[6vh] w-full' >  
-                 <label className='absolute top-1 px-2 translate-x-1 text-xs text-gray-800' >First Name</label>
+                 <label className='absolute top-0 px-2 translate-x-1 text-xs text-gray-800' >First Name</label>
                  <input {...register("firstName",{required:true,pattern: /^[A-Za-z]+$/, maxLength: 20})} id='firstName' className='outline-none px-2 py-[1.5rem] border-2 rounded-md text-justify h-[5vh]  focus:border-blue-400 bg-gray-300 pr-10 w-full' type={"text"} />
                  {
                   errors?.firstName?.type === "required" && <p className="text-red-600" >This field is required</p>
